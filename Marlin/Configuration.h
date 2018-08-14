@@ -79,7 +79,7 @@
  * Z-Probe type (must be none or one of them)
  * If a Z-Probe type is selected, a Bed Leveling type other than MANUAL must be selected.
  */
-//#define BLTOUCH         // ANTClabs BLTouch sensor (might also work with clones)
+#define BLTOUCH         // ANTClabs BLTouch sensor (might also work with clones)
 //#define SN04          // Green sensor
 //#define INDUCTIVE_NO  // Normally open inductive sensor
 //#define INDUCTIVE_NC  // Normally closed inductive sensor
@@ -90,20 +90,20 @@
  * Bed leveling type (see: https://github.com/JimBrown/MarlinTarantula/wiki/Bed-leveling-types-(EasyConfig))
  * Must choose one of these other than MANUAL if a Z-Probe type is selected.
  */
-//#define TRIPOINT
+#define TRIPOINT
 //#define LINEAR
 //#define BILINEAR
 //#define UBL
-#define MANUAL
+//#define MANUAL
 
 /**
  * Z-Probe offset from nozzle (https://github.com/JimBrown/MarlinTarantula/wiki/How-to-determine-your-Z-Probe-offset)
  * Use only one of Left/Right and Front/Behind. Others must be 0 (zero)
  * If you have a dual nozzle the offsets are calculated from the primary nozzle (the one plugged in to E0)
  */
-#define SENSOR_LEFT        0
+#define SENSOR_LEFT        22
 #define SENSOR_RIGHT       0
-#define SENSOR_FRONT       0
+#define SENSOR_FRONT       38
 #define SENSOR_BEHIND      0
 
 /**
@@ -115,7 +115,7 @@
 /**
  * Margin around perimiter of bed for probing (will not probe outside this margin)
  */
-#define BED_MARGIN         1
+#define BED_MARGIN         5
 
 /**
  * Servo probe deploy and stow angles
@@ -1075,7 +1075,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER SENSOR_RIGHT - SENSOR_LEFT  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER SENSOR_BEHIND - SENSOR_FRONT // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER +2   // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 0
