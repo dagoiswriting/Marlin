@@ -1,3 +1,12 @@
+============================================================================
+
+__This is the config file for Alessandro's printer__
+
+The only aim of this repo is to keep track everywhere of the changes I made to customize Marlin for my needs
+
+============================================================================
+
+
 # Marlin 3D Printer Firmware
 <img align="right" src="../../raw/1.1.x/buildroot/share/pixmaps/logo/marlin-250.png" />
 
