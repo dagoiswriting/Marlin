@@ -1,8 +1,8 @@
 ============================================================================
 
-__This is the config file for Alessandro's printer__
 
-The only aim of this repo is to keep track everywhere of the changes I made to customize Marlin for my needs
+__file di configurazione per la stampante di Alessandro__
+
 
 ============================================================================
 
