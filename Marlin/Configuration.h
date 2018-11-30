@@ -103,9 +103,9 @@
  * If you have a dual nozzle the offsets are calculated from the primary nozzle (the one plugged in to E0)
  */
 #define SENSOR_LEFT        0
-#define SENSOR_RIGHT       31  //31
-#define SENSOR_FRONT       25  //25
-#define SENSOR_BEHIND      0
+#define SENSOR_RIGHT       29
+#define SENSOR_FRONT       0
+#define SENSOR_BEHIND      26
 
 /**
  * Number of grid points in each direction
