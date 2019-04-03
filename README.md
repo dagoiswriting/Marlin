@@ -4,6 +4,10 @@ __This is the config file for my Tevo Tarantula, using the excellent JimBrown's 
 
 The only aim of this repo is to keep track everywhere of the changes I made to customize Marlin for my needs
 
+----------------------------------------------------------------------------
+
+Before you start, please install the latest version of U8glib!
+
 ============================================================================
 
 # Marlin 3D Printer Firmware
