@@ -377,6 +377,8 @@ static void lcd_implementation_init() {
     u8g.setContrast(lcd_contrast);
   #endif
 
+  ug8.setContrast(255);
+
   #if ENABLED(LCD_SCREEN_ROT_90)
     u8g.setRot90();   // Rotate screen by 90°
   #elif ENABLED(LCD_SCREEN_ROT_180)
