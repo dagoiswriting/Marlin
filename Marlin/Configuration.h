@@ -2054,7 +2054,7 @@
 // MakerLab Mini Panel with graphic
 // controller and SD support - http://reprap.org/wiki/Mini_panel
 //
-//#define MINIPANEL
+#define MINIPANEL
 
 //
 // MaKr3d Makr-Panel with graphic controller and SD support.
@@ -2246,13 +2246,16 @@
  * LED Type. Enable only one of the following two options.
  *
  */
-//#define RGB_LED
+#define RGB_LED
 //#define RGBW_LED
 
 #if ENABLED(RGB_LED) || ENABLED(RGBW_LED)
-  #define RGB_LED_R_PIN 34
-  #define RGB_LED_G_PIN 43
-  #define RGB_LED_B_PIN 35
+  // #define RGB_LED_R_PIN 34
+  // #define RGB_LED_G_PIN 43
+  // #define RGB_LED_B_PIN 35
+  #define RGB_LED_R_PIN 25
+  #define RGB_LED_G_PIN 27
+  #define RGB_LED_B_PIN 29
   #define RGB_LED_W_PIN -1
 #endif
 
