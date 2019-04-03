@@ -562,7 +562,7 @@
 
     #elif ENABLED(MINIPANEL)
 
-    #define BEEPER_PIN 37
+          #define BEEPER_PIN 37
           // Pins for DOGM SPI LCD Support
           #define DOGLCD_A0  16
           #define DOGLCD_CS  17
