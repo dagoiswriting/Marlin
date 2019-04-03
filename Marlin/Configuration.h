@@ -141,7 +141,7 @@
 #define EXTRUDER_E1_X 0
 #define EXTRUDER_E1_Y 0
 
-/** 
+/**
  * Secondary Extruder steps per mm
  * (how to calibrate: https://toms3d.org/2014/04/06/3d-printing-guides-calibrating-your-extruder/)
  */
@@ -1946,14 +1946,14 @@
 // http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
 #if ENABLED(FULL_GRAPHIC_SMART)
-  #define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+  //#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
 #endif
 
 //
 // MakerLab Mini Panel with graphic
 // controller and SD support - http://reprap.org/wiki/Mini_panel
 //
-//#define MINIPANEL
+#define MINIPANEL
 
 //
 // RepRapWorld REPRAPWORLD_KEYPAD v1.1
@@ -2195,9 +2195,9 @@
 //#define RGBW_LED
 
 #if ENABLED(RGB_LED) || ENABLED(RGBW_LED)
-  #define RGB_LED_R_PIN 34
-  #define RGB_LED_G_PIN 43
-  #define RGB_LED_B_PIN 35
+  #define RGB_LED_R_PIN 25 //34
+  #define RGB_LED_G_PIN 27 //43
+  #define RGB_LED_B_PIN 29 //35
   #define RGB_LED_W_PIN -1
 #endif
 
