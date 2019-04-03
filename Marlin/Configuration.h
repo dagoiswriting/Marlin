@@ -1904,7 +1904,7 @@
 // Note: Usually sold with a white PCB.
 //
 #if DISABLED(FULL_GRAPHIC_SMART)
-  #define REPRAP_DISCOUNT_SMART_CONTROLLER
+  //#define REPRAP_DISCOUNT_SMART_CONTROLLER
 #endif
 
 //
