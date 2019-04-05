@@ -28,25 +28,31 @@
 
 ***********************************************************************/
 
-#define PRINTER_NAME "Tarantula"  // Change this to whatever you wish, or leave it as it is.
+#define PRINTER_NAME "TEVO Tarantula"  // Change this to whatever you wish, or leave it as it is.
                                                     // NOTE: Whatever you put here will have " Ready..." appended to it.
 
 /**
  * Equipment options
  */
 //#define LARGE_BED
-#define SDSUPPORT
-//#define CHANGE_Y_DIRECTION        // If your bed homes in the wrong direction (it should move front to back) enable this.
-//#define CHANGE_X_DIRECTION        // If your X carriage homes in the wrong direction (it should move right to left) enable this.
-//#define CHANGE_Z_DIRECTION        // If your Z homes in the wrong direction (it should move top to bottom) enable this.
-#define CHANGE_E0_DIRECTION         // If your filament is retracting instead of extruding enable this. (enable for Titan Extruder)
-#define HOTEND_E3DV6              // Genuine E3D v6 hotend.
-//#define FULL_GRAPHIC_SMART        // Enable this if you have a RepRap Discount Full Graphic Smart Controller (The
-                                    // stock controller is a RepRap Discount Smart Controller)
-//#define Z_DUAL_STEPPER_DRIVERS    // Enable this if you have dual Z stepper motors with the second stepper motor
-                                    // connected to the next available E plug (usually E1)
 
-#define MOTHERBOARD BOARD_MKS_GEN_13        // Original controller board with built in stepper drivers. Works with MKS BASE 1.3, 1.4
+#define SDSUPPORT
+
+//#define CHANGE_Y_DIRECTION                    // If your bed homes in the wrong direction (it should move front to back) enable this.
+//#define CHANGE_X_DIRECTION                   // If your X carriage homes in the wrong direction (it should move right to left) enable this.
+//#define CHANGE_Z_DIRECTION                  // If your Z homes in the wrong direction (it should move top to bottom) enable this.
+#define CHANGE_E0_DIRECTION                   // If your filament is retracting instead of extruding enable this. (enable for Titan Extruder)
+//#define Z_DUAL_STEPPER_DRIVERS              // Enable this if you have dual Z stepper motors with the second stepper motor
+                                              // connected to the next available E plug (usually E1)
+
+#define HOTEND_E3DV6                          // Genuine E3D v6 hotend.
+
+//#define REPRAP_DISCOUNT_SMART_CONTROLLER    // Enable this if you have the stock RepRap Discount Smart Controller
+//#define FULL_GRAPHIC_SMART                  // Enable this if you have a RepRap Discount Full Graphic Smart Controller
+#define MINIPANEL                             //Enable this if you have a Minipanel or a MINI12864
+
+
+#define MOTHERBOARD BOARD_MKS_GEN_13          // Original controller board with built in stepper drivers. Works with MKS BASE 1.3, 1.4
 //#define MOTHERBOARD BOARD_MKS_BASE_15       // MKS v1.5 with Allegro A4982 stepper drivers
 //#define MOTHERBOARD BOARD_MKS_BASE_HEROIC   // MKS BASE 1.0 with Heroic HR4982 stepper drivers
 //#define MOTHERBOARD BOARD_MKS_GEN_L         // Newer controller board with replacable stepper drivers
@@ -103,9 +109,9 @@
  * If you have a dual nozzle the offsets are calculated from the primary nozzle (the one plugged in to E0)
  */
 #define SENSOR_LEFT        0
-#define SENSOR_RIGHT       20
-#define SENSOR_FRONT       27
-#define SENSOR_BEHIND      0
+#define SENSOR_RIGHT       29
+#define SENSOR_FRONT       0
+#define SENSOR_BEHIND      26
 
 /**
  * Number of grid points in each direction
@@ -145,7 +151,7 @@
  * Secondary Extruder steps per mm
  * (how to calibrate: https://toms3d.org/2014/04/06/3d-printing-guides-calibrating-your-extruder/)
  */
-#define E1_STEPS      100 // Stock extruder. If you have a Tevo Titan, try 400 then calibrate
+#define E1_STEPS      376.14 // Stock extruder. If you have a Tevo Titan, try 400 then calibrate
 //#define CHANGE_E1_DIRECTION   // If your secondary extruder is going backwards, enable this.
 
 /**
@@ -1903,9 +1909,9 @@
 //
 // Note: Usually sold with a white PCB.
 //
-#if DISABLED(FULL_GRAPHIC_SMART)
+//#if DISABLED(FULL_GRAPHIC_SMART)
   //#define REPRAP_DISCOUNT_SMART_CONTROLLER
-#endif
+//#endif
 
 //
 // ULTIMAKER Controller.
@@ -2054,7 +2060,7 @@
 // MakerLab Mini Panel with graphic
 // controller and SD support - http://reprap.org/wiki/Mini_panel
 //
-#define MINIPANEL
+//#define MINIPANEL
 
 //
 // MaKr3d Makr-Panel with graphic controller and SD support.
